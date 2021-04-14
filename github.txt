@@ -1,2 +1,2 @@
-download file
-> hold alt and click raw
+#download file
+hold alt and click raw

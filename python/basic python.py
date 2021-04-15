@@ -3,7 +3,7 @@
 20
 
 # Add and print
-print(10 +10)
+print(10 + 10)
 20
 
 a = "North"

@@ -262,7 +262,6 @@ df
 df["JAIL_TIME"] = np.where(df['LAW_CAT_CD']=='F',36,
                            np.where(df['LAW_CAT_CD']=='M', 12, 1))
 
-
 #----------Data cleaning----------
 # isnull(): Generate a boolean mask indicating missing values
 # notnull(): Opposite of isnull()

@@ -9,7 +9,6 @@ df = pd.DataFrame([[1,np.nan,2],
                   [np.nan,4,6]])
 df
 
-
     0	1   2
 0	1.0	NaN	2
 1	2.0	3.0	5

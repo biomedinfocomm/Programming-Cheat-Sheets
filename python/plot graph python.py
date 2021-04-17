@@ -117,7 +117,7 @@ plt.xlabel("Temperature")
 plt.ylabel("Ice Creams Sold")
 plt.show()
 
-#----------Histogram----------
+#----------Histogram plots----------
 labels = ["JavaScript", "Java", "Python", "R"]
 usage = [62.8, 43.3, 36.8, 32.4]
 y_positions = range(len(labels))

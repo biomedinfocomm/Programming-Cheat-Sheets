@@ -1,3 +1,4 @@
+#---------Add two numbers--------
 # Addition
 10 + 10
 20
@@ -23,6 +24,12 @@ a = 10 + 10
 print(a)
 20
 
+#---------Types--------
+# Find type of variables
+type("colour")
+str
+
+#---------Round up and round down--------
 # Convert to round down
 round(10.2)
 10
@@ -31,20 +38,19 @@ round(10.2)
 round(10.88)
 11
 
-# Find type of variables
-type("colour")
-str
-
+#---------Concatenate---------
 # Concatenating two or more string
 colours = "red" + " " + "green"
 print(colours)
 red green
 
+#---------Length--------
 # Find length of the locations
 locations = ["North", "South", "East", "West"]
 print (len(locations))
 4
 
+#----------Index and slice---------
 # Find positive index of the locations
 locations = ["North", "South", "East", "West"]
 print(locations[2])
@@ -60,6 +66,7 @@ locations = ["North", "South", "East", "West"]
 print(locations[1:3])
 ['South', 'East']
 
+#----------Append--------
 # Add append
 locations = ["North", "South", "East", "West"]
 locations.append("Central")
@@ -67,41 +74,14 @@ locations.append("Not Found")
 print(locations)
 ['North', 'South', 'East', 'West', 'Central', 'Not Found']
 
+#--------Remove--------
 # Remove pop
 locations = ["North", "South", "East", "West", "Central", "Not Found"]
 locations.pop(-1)
 print(locations)
 ['North', 'South', 'East', 'West', 'Central']
 
-# For loop
-fruits_list = ["Apple", "Orange", "Berries", "Mango", "Melon"]
-for selected_fruit in fruits_list:
-    print(selected_fruit)
-Apple
-Orange
-Berries
-Mango
-Melon
-
-# While loop descending
-a = 3
-while (a > 0):
-    a = a-1
-    print(a)
-2
-1
-0
-
-# While loop ascending
-a = 0
-while (a < 3):
-    a = a+1
-    print(a)
-1
-2
-3
-
-# Dictionary
+#----------Dictionaries--------
 colours = dict(
     apple='red',
     pear='green',
@@ -117,7 +97,7 @@ d = {"tom":111, "Fio":222, "Gin":333}
 for key in d:
     print("key:",key,"values:",d[key])
 
-# Input
+#--------Input---------
 name = input("Enter your name: ")
 print(name)
 
@@ -140,7 +120,7 @@ print("Total: ", p)
 >>> Enter rate: 2.1
 Total:  4.620000000000001
 
-# Sequential
+#--------Sequential--------
 x = 2
 print(x)
 x = x + 2
@@ -149,7 +129,7 @@ print(x)
 2
 4
 
-# Conditional
+#---------Conditional--------
 x = 5
 if x < 10: # If true or false
     print('Smaller')
@@ -160,7 +140,7 @@ print('All')
 Smaller
 Biggest
 
-# One-way decision
+#--------One-way decision--------
 x = 5
 print('Before 5')
 if x == 5:
@@ -183,7 +163,7 @@ Afterwards 5
 Before 6
 Afterwards 6
 
-# Two-way decision
+#--------Two-way decision--------
 x = 4
 if x > 2:
     print('Bigger')
@@ -194,7 +174,7 @@ print ('All done')
 Bigger
 All done
 
-# Nested decision
+#--------Nested decision---------
 x = 42
 if x > 1:
     print('More than one')
@@ -206,7 +186,7 @@ More than One
 Less than 100
 All done
 
-# Multi-way
+#--------Multi-way---------
 # only one will run
 x = 0
 if x < 2:
@@ -244,7 +224,7 @@ print('All done')
 Large 
 All done
 
-# Conditional try except
+#--------Conditional try except---------
 # If the code in try works, except is skipped
 # If the code in try fails, it jumps to the except 
 
@@ -265,7 +245,7 @@ print('Second', istr) # When the second conversion succeeds, it just skips the e
 First -1
 Second 123
 
-# Functions
+#-------Functions--------
 # A function is some stored code that we use. A function takes some input and produces an output.
 # Stored and reused
 def thing():
@@ -324,7 +304,7 @@ Hola White
 print(greet ('fr'), 'Grey')
 Bonjour Grey
 
-# Multiple parameters and arguements
+#-------Multiple parameters and arguements--------
 def addtwo(a, b): # parameter in function
     added = a + b
     return added 
@@ -333,8 +313,35 @@ print(x)
 
 8
 
-# Loops
+#----------Loops---------
 # Loops (repeated steps) have iteration variables (n) that change each time through a loop.
+# For loop
+fruits_list = ["Apple", "Orange", "Berries", "Mango", "Melon"]
+for selected_fruit in fruits_list:
+    print(selected_fruit)
+Apple
+Orange
+Berries
+Mango
+Melon
+
+# While loop descending
+a = 3
+while (a > 0):
+    a = a-1
+    print(a)
+2
+1
+0
+
+# While loop ascending
+a = 0
+while (a < 3):
+    a = a+1
+    print(a)
+1
+2
+3
 
 # repeated while steps
 n = 5
@@ -352,44 +359,6 @@ print(n)
 end
 0
 
-# Break
-# Break statement ends the current loop and jumps to the statement immediately following the loop.
-
-# Break infinite loop
-# Break execute means out of loop
-while True:
-    line = input('> ') # type something
-    if line == 'done':
-        break
-    print(line)
-    print('Done!') 
-
->>> hello
-hello
->>> finished
-finished
->>> done
-Done!
-
-# Continue
-# Continue statement ends the current iteration and jumps to the top of the loop and starts the next iteration.
-while True:
-    line = input('> ') # type something
-    if line[0]== '#':
-        continue
-    if line == 'done':
-        break
-    print(line)
-print('Done!') 
-
->>> hello
-hello
->>> # print
-print
->>> done
-Done!
-
-# Definite loop
 # Definite loop (for loops) have clear iteration variables that change each time through a loop. These iteration variables move through the sequence or set. 
 # Definite loop for list of numbers
 for i in [5,4,3,2,1]:
@@ -541,3 +510,41 @@ Before
 3 74
 3 15
 After 3
+
+#----------Break----------
+# Break statement ends the current loop and jumps to the statement immediately following the loop.
+# Break infinite loop
+# Break execute means out of loop
+while True:
+    line = input('> ') # type something
+    if line == 'done':
+        break
+    print(line)
+    print('Done!') 
+
+>>> hello
+hello
+>>> finished
+finished
+>>> done
+Done!
+
+#--------Continue--------
+# Continue statement ends the current iteration and jumps to the top of the loop and starts the next iteration.
+while True:
+    line = input('> ') # type something
+    if line[0]== '#':
+        continue
+    if line == 'done':
+        break
+    print(line)
+print('Done!') 
+
+>>> hello
+hello
+>>> # print
+print
+>>> done
+Done!
+
+

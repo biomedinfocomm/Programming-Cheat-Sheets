@@ -1,4 +1,8 @@
 #----------Print----------
+# Print in table 
+sep=';'
+# Print with whitespace
+sep='\t'
 # Print a new line
 sep='\n'
 #---------Add two numbers--------

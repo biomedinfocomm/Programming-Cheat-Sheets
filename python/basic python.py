@@ -1,3 +1,5 @@
+#----------Print----------
+sep='\n'
 #---------Add two numbers--------
 # Addition
 10 + 10

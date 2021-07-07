@@ -1,6 +1,21 @@
 ## Create basic website
 ### Html
 
+#### Starting shortcut
+    <html>
+    ! enter
+    </html>
+
+#### Link html to css
+    <html>
+    link css
+    </html>
+
+#### Ajust font size
+    <html>
+    <h1 style="font-size:8px">Hello</h1>
+    </html>
+
 #### Display title
     <html>
       <head>
@@ -27,12 +42,6 @@
     </body>
     
     </html>
-
-## **First Heading**
-###### First paragraph.
-
-
-
 
 ### Css
 [comment]: <> (! and return in keyboad in vscode)
@@ -172,47 +181,71 @@
     
     </html>
 
-#### Example of website with bootsrap (resource: w3schools)
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    </head>
-    <body>
+## Create responsive website
+### Html
 
-    <div class="jumbotron text-center">
-    <h1>My First Bootstrap Page</h1>
-    <p>Resize this responsive page to see the effect!</p> 
-    </div>
-  
-    <div class="container">
-    <div class="row">
-    <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Column 3</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    </div>
-    </div>
+#### Css units
+    <html>
+    1. absolute: pixels(px)
+    - pt, cm, mm, in
 
-    </body>
+    2. relative: font-size, viewport
+    - font-size: em and rem
+    - Example: 
+    ul{
+        /* 1.5em > 150% */
+        font-size: 1.5em;
+    }
+
+    - viewport: vw, vh, vmin, vmax
+
+    3. percentages: width
+    - relative to parent
+
     </html>
 
+#### Flexbox
+    <html>
+    - layout tool
+    </html>
+
+#### Media query
+    <html>
+    - response to different screen sizes
+    </html>
+
+#### Choose correct units
+    <html>
+    font-size = rem
+    padding and margin = em
+    widths = em or percentage
+    </html>
+
+#### Basics of flexbox
+    <html>
+    1. Block elements: stack on one top of each other 
+    - div, header, footer, main
+    - h1 > h6
+    - p
+
+    2. Horizontal to vertical
+    - Example:
+    .parent{
+        display: flex;
+    }
+
+    3. Container inside with columns
+    - Example:
+    .container
+      .columns
+          .col
+          .col
+          .col
+      .columns
+          .col
+          .col
+
+    </html>
 
 [comment]: <> (show comment to display code block)
 [comment]: <> (![]folder name and image should be in the same folder/selected image)

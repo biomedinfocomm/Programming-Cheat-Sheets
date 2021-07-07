@@ -3,6 +3,10 @@
 import pandas as pd
 import numpy as np
 
+#----------Display maximum columns----------
+pd.set_option("display.max_columns", None)
+df.head() 
+
 #----------Dataframe with null values---------
 df = pd.DataFrame([[1,np.nan,2],
                   [2,3,5],
@@ -73,6 +77,14 @@ data[data.notnull()]
 
 0        1
 2    hello
+
+# Find the sum 
+df["column names"].value_counts()
+
+1 100
+0 10
+# Extract 0 or 1 
+df[df["column names"] ==0]
 
 #----------Drop----------
 # Drop NaN values and set fix the data

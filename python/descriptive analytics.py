@@ -60,6 +60,10 @@ a[0], a[1], a[2]
 #----------Read and load----------
 # Read data file
 df = pd.read_csv("file.csv")
+#load data
+df = pd.read_csv("cardio.csv", sep=";")
+#load data
+df = pd.read_csv("cardio.csv", encoding="unicode_escape")
 # display all data
 df
 

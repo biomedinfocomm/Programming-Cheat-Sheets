@@ -8,7 +8,13 @@
 
 #### Link html to css
     <html>
-    link css
+    type link:css it will display below:
+    <link rel="stylesheet" href="style.css">
+    </html>
+
+#### Link html to javascript
+    <html>
+    <script src="index.js></script>
     </html>
 
 #### Ajust font size
